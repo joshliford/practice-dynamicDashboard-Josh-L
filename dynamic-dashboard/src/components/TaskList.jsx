@@ -4,8 +4,20 @@ const TaskList = () => {
         { taskName: "Learn about Agentic AI", completed: false},
         { taskName: "Learn about and use React", completed: true},
         { taskName: "Learn about Next.js", completed: false},
-        { taskName: "Learn about Spec-Driven Development", completed: true}
+        { taskName: "Learn about Spec-Driven Development", completed: true},
+        { taskName: "Learn about N8N", completed: true}
     ];
+
+    let completedTasks = 0;
+    let incompleteTasks = 0;
+
+    for (let task of tasks) {
+        if (task.completed === true) {
+            completedTasks++;
+        } else {
+            incompleteTasks++;
+        }
+    }
 
     return (
         <div>
@@ -19,6 +31,7 @@ const TaskList = () => {
                         }
                     })}
                 </ul>
+            <p>Completed Tasks: {completedTasks} | Incomplete Tasks: {incompleteTasks}</p>
         </div>
     )
 
