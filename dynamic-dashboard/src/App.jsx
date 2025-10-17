@@ -1,5 +1,6 @@
 import Greeting from './components/Greeting'
 import ConditionalMessage from './components/ConditionalMessage';
+import TaskList from './components/TaskList';
 import './App.css'
 
 function App() {
@@ -7,8 +8,11 @@ function App() {
 
   return (
     <>
+    <div>
       <Greeting usersName={usersName}/>
       <ConditionalMessage />
+      <TaskList />
+    </div>
     </>
   )
 }
