@@ -1,6 +1,4 @@
-const Greeting = () => {
-
-    const usersName = "Josh";
+const Greeting = ( {usersName} ) => {
 
     return (
         <h1 className="greeting">Welcome, {usersName}!</h1>
