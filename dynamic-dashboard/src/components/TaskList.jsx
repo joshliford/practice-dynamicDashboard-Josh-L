@@ -21,7 +21,7 @@ const TaskList = () => {
 
     return (
         <div>
-            <h3 className="task-list-heading">Your Task List:</h3>
+            <h3 className="task-list-heading">Task List:</h3>
                 <ul className="task-list">
                     {tasks.map(task => {
                         if (task.completed === true) {
@@ -31,7 +31,7 @@ const TaskList = () => {
                         }
                     })}
                 </ul>
-            <p>Completed Tasks: {completedTasks} | Incomplete Tasks: {incompleteTasks}</p>
+            <p className="dynamic-task-counter">✅ Completed Tasks: {completedTasks} | ❌ Incomplete Tasks: {incompleteTasks}</p>
         </div>
     )
 

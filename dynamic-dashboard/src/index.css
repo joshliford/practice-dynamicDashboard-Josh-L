@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.date {
+    text-align: center;
+    font-size: small;
+    margin-top: 0px;
+}
+
+.greeting {
+    text-align: center;
+}
+
+.task-list {
+    list-style-type: square;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.dynamic-task-counter {
+    text-align: center;
+    font-weight: 700;
+}
